@@ -1,159 +1,141 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Room 54 Updates — Mrs. Ramos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Room 54 Updates</title>
 <style>
   :root {
-    --ink: #1f2937;
-    --muted: #6b7280;
-    --line: #e5e7eb;
-    --accent: #b45309;
-    --accent-bg: #fffbeb;
-    --accent-border: #fde68a;
-    --bg: #ffffff;
-    --card-bg: #f9fafb;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --ink: #e5e7eb;
-      --muted: #9ca3af;
-      --line: #374151;
-      --accent: #fbbf24;
-      --accent-bg: #3f2d05;
-      --accent-border: #92670a;
-      --bg: #111827;
-      --card-bg: #1a2231;
-    }
-  }
-  :root[data-theme="dark"] {
-    --ink: #e5e7eb;
-    --muted: #9ca3af;
-    --line: #374151;
-    --accent: #fbbf24;
-    --accent-bg: #3f2d05;
-    --accent-border: #92670a;
-    --bg: #111827;
-    --card-bg: #1a2231;
+    --ink: #2b2420;
+    --paper: #fdfaf5;
+    --accent: #b5502f;
+    --accent-soft: #f4e3d8;
+    --line: #e6ddd1;
+    --muted: #6b6058;
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
-    background: var(--bg);
+    background: var(--paper);
     color: var(--ink);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.45;
-    padding: 24px 16px 48px;
+    font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif;
+    line-height: 1.5;
   }
-  .wrap { max-width: 640px; margin: 0 auto; }
-  h1 { font-size: 1.35rem; margin: 0 0 2px; }
-  .updated { color: var(--muted); font-size: 0.85rem; margin-bottom: 18px; }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 32px 20px 48px;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 4px;
+    letter-spacing: 0.01em;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin: 0 0 24px;
+  }
   .banner {
-    background: var(--accent-bg);
-    border: 1px solid var(--accent-border);
-    color: var(--accent);
-    border-radius: 10px;
-    padding: 12px 14px;
-    font-size: 0.92rem;
-    margin-bottom: 20px;
+    background: var(--accent-soft);
+    border-left: 4px solid var(--accent);
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin-bottom: 28px;
+    font-size: 0.98rem;
   }
-  .banner strong { display: block; margin-bottom: 2px; color: var(--ink); }
-  section { margin-bottom: 22px; }
-  h2 {
-    font-size: 0.78rem;
+  .banner strong {
+    color: var(--accent);
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    color: var(--muted);
-    margin: 0 0 8px;
+  }
+  section {
+    margin-bottom: 28px;
+  }
+  h2 {
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent);
     border-bottom: 1px solid var(--line);
     padding-bottom: 6px;
+    margin: 0 0 12px;
   }
-  ul { margin: 0; padding-left: 0; list-style: none; }
+  ul {
+    margin: 0;
+    padding-left: 1.2em;
+  }
   li {
-    padding: 7px 0;
-    border-bottom: 1px solid var(--line);
-    font-size: 0.95rem;
-    display: flex;
-    justify-content: space-between;
-    gap: 12px;
+    margin-bottom: 8px;
   }
-  li:last-child { border-bottom: none; }
-  .label { color: var(--ink); }
-  .when { color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
-  .plain li { display: block; }
-  .plain .label { display: block; }
-  .card {
-    background: var(--card-bg);
-    border-radius: 10px;
-    padding: 4px 14px;
+  .note {
+    color: var(--muted);
+    font-size: 0.9rem;
   }
-  .allergy {
-    background: var(--accent-bg);
-    border: 1px solid var(--accent-border);
-    border-radius: 10px;
-    padding: 10px 14px;
-    font-size: 0.92rem;
-    font-weight: 600;
-    color: var(--accent);
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #ece5db;
+      --paper: #1c1815;
+      --accent: #e0895f;
+      --accent-soft: #3a2a20;
+      --line: #3a332c;
+      --muted: #a89d90;
+    }
   }
-  a { color: inherit; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>Room 54</h1>
-  <div class="updated">Compiled September 22, 2026</div>
+  <p class="subtitle">Weekly update summary &mdash; Mrs. Ramos' class</p>
 
   <div class="banner">
-    <strong>Nothing new or urgent this check</strong>
-    No new deadlines, forms, or schedule changes since the last check. Past dates (first day of school, Back to School Night, Running Club start) have been dropped from the Key dates list below.
+    <strong>What's new</strong>
+    During Parent-Teacher Conference week (Nov 16&ndash;20), the newsletter notes dismissal will be 12:45&nbsp;PM every day, not just Wednesdays &mdash; worth confirming and planning pickup around. Also: the class had its first math test this week (Tue/Wed); no homework was assigned those two nights.
   </div>
 
   <section>
     <h2>Key dates</h2>
     <ul>
-      <li><span class="label">Lunch with Loves, 12:15 PM</span><span class="when">Sep 30</span></li>
-      <li><span class="label">No School</span><span class="when">Oct 12</span></li>
-      <li><span class="label">Picture Day</span><span class="when">Oct 15</span></li>
-      <li><span class="label">Parent-Teacher Conferences</span><span class="when">Nov 16–20</span></li>
+      <li>Lunch with your Loves &mdash; Sept 30, 12:15 PM</li>
+      <li>No School &mdash; Oct 12</li>
+      <li>Picture Day &mdash; Oct 15</li>
+      <li>Parent-Teacher Conferences &mdash; Nov 16&ndash;20 (dismissal 12:45 PM each day that week)</li>
+    </ul>
+    <p class="note">Earlier dates that have already passed (first day of school, Back to School Night, Running Club start) are left off this list.</p>
+  </section>
+
+  <section>
+    <h2>Action items</h2>
+    <ul>
+      <li>Sign up for a Parent-Teacher Conference slot (Nov 16&ndash;20) via the sign-up link in the newsletter.</li>
+      <li>Optional: browse the Wish List for classroom supplies.</li>
+      <li>Optional: sign up to volunteer &mdash; field trip volunteers need a fingerprinting clearance on file with the office (forms must be updated yearly).</li>
     </ul>
   </section>
 
   <section>
-    <h2>Action items for parents</h2>
-    <div class="card">
-      <ul class="plain">
-        <li>None currently due. Volunteer fingerprinting clearance is an ongoing (not newly dated) requirement — needed before volunteering, including for field trips.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
     <h2>Daily logistics</h2>
-    <div class="card">
-      <ul class="plain">
-        <li>Drop-off / pick-up: Green Gate on Stadium Street</li>
-        <li>Dismissal: 3:25 PM Mon/Tue/Thu/Fri — 12:45 PM Wednesdays (early-dismissal day)</li>
-        <li>Alternating Week A / Week B schedule — P.E. and VAPA times shift week to week</li>
-        <li>Homework folders come home with Dibels results</li>
-        <li>Nightly reading 20+ minutes; review math homework nightly</li>
-      </ul>
-    </div>
+    <ul>
+      <li>Dismissal: 3:25 PM Mon/Tue/Thu/Fri; 12:45 PM Wednesdays (modified day)</li>
+      <li>Drop-off &amp; pick-up: Green Gate on Stadium Street</li>
+      <li>P.E./VAPA alternate on a Week A / Week B schedule &mdash; check the homework folder for the current week's day/time so kids wear the right shoes and bring a water bottle</li>
+      <li>Home/school folder: empty it every evening and return it to school daily (Dibels results come home in this folder)</li>
+      <li>Homework: read 20+ minutes nightly; review math homework nightly (doesn't need to be returned to school)</li>
+    </ul>
   </section>
 
   <section>
-    <h2>Supply &amp; volunteer reminders</h2>
-    <div class="allergy">⚠ Peanut allergy in the classroom — no peanuts or peanut butter in snacks or lunches.</div>
-    <div class="card" style="margin-top:10px;">
-      <ul class="plain">
-        <li>Headphones: wired only, in a labeled ziplock bag (no wireless earbuds)</li>
-        <li>Label all belongings with child's name + "Room 54"</li>
-        <li>Volunteers (incl. field trips) need current fingerprinting clearance on file</li>
-      </ul>
-    </div>
+    <h2>Supply &amp; policy reminders</h2>
+    <ul>
+      <li>Peanut allergy in the classroom &mdash; no peanuts or peanut butter in snacks or lunches; consider non-food birthday treats (read-aloud, bubbles, stickers)</li>
+      <li>Headphones must be labeled and kept in a labeled ziplock bag; no wireless earbuds/headphones (send the wired plug if the headphones are wireless)</li>
+      <li>Label all belongings with your child's name and "Room 54"</li>
+    </ul>
   </section>
-
 </div>
 </body>
 </html>
