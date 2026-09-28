@@ -6,134 +6,135 @@
 <title>Room 54 Updates</title>
 <style>
   :root {
-    --ink: #2b2420;
-    --paper: #fdfaf5;
-    --accent: #b5502f;
-    --accent-soft: #f4e3d8;
-    --line: #e6ddd1;
-    --muted: #6b6058;
+    --ink: #1c1c1e;
+    --muted: #55565c;
+    --accent: #b3541e;
+    --accent-bg: #fdf1e6;
+    --border: #e5e2dc;
+    --bg: #fffdf9;
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
-    background: var(--paper);
+    padding: 2rem 1.25rem 3rem;
+    background: var(--bg);
     color: var(--ink);
-    font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     line-height: 1.5;
   }
-  .wrap {
-    max-width: 640px;
-    margin: 0 auto;
-    padding: 32px 20px 48px;
-  }
+  .wrap { max-width: 640px; margin: 0 auto; }
   h1 {
-    font-size: 2rem;
-    margin: 0 0 4px;
-    letter-spacing: 0.01em;
+    font-size: 1.9rem;
+    margin: 0 0 0.15rem;
+    letter-spacing: -0.01em;
   }
   .subtitle {
     color: var(--muted);
     font-size: 0.95rem;
-    margin: 0 0 24px;
+    margin: 0 0 1.5rem;
   }
   .banner {
-    background: var(--accent-soft);
-    border-left: 4px solid var(--accent);
-    border-radius: 6px;
-    padding: 14px 16px;
-    margin-bottom: 28px;
-    font-size: 0.98rem;
+    background: var(--accent-bg);
+    border: 1px solid #eccba3;
+    border-radius: 10px;
+    padding: 0.9rem 1.1rem;
+    margin-bottom: 1.75rem;
   }
-  .banner strong {
-    color: var(--accent);
-    display: block;
-    margin-bottom: 4px;
+  .banner h2 {
+    margin: 0 0 0.5rem;
     font-size: 0.85rem;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
-  }
-  section {
-    margin-bottom: 28px;
-  }
-  h2 {
-    font-size: 1.05rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
     color: var(--accent);
-    border-bottom: 1px solid var(--line);
-    padding-bottom: 6px;
-    margin: 0 0 12px;
   }
-  ul {
-    margin: 0;
-    padding-left: 1.2em;
+  .banner ul { margin: 0; padding-left: 1.15rem; }
+  .banner li { margin-bottom: 0.4rem; }
+  .banner li:last-child { margin-bottom: 0; }
+  section { margin-bottom: 1.9rem; }
+  h2.section-title {
+    font-size: 1.05rem;
+    margin: 0 0 0.6rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid var(--border);
   }
-  li {
-    margin-bottom: 8px;
-  }
-  .note {
-    color: var(--muted);
-    font-size: 0.9rem;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --ink: #ece5db;
-      --paper: #1c1815;
-      --accent: #e0895f;
-      --accent-soft: #3a2a20;
-      --line: #3a332c;
-      --muted: #a89d90;
-    }
+  ul { margin: 0; padding-left: 1.2rem; }
+  li { margin-bottom: 0.45rem; }
+  li:last-child { margin-bottom: 0; }
+  .date-list li { list-style: none; margin-left: -1.2rem; padding: 0.3rem 0; border-bottom: 1px dashed var(--border); display: flex; justify-content: space-between; gap: 1rem; }
+  .date-list li:last-child { border-bottom: none; }
+  .date-list .what { color: var(--ink); }
+  .date-list .when { color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .action { background: #fff; }
+  strong.tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #fff;
+    background: var(--accent);
+    border-radius: 4px;
+    padding: 0.1rem 0.4rem;
+    margin-right: 0.4rem;
+    vertical-align: middle;
   }
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>Room 54</h1>
-  <p class="subtitle">Weekly update summary &mdash; Mrs. Ramos' class</p>
+  <p class="subtitle">Mrs. Ramos &mdash; Weekly Update Summary (as of Sep 25, 2026 newsletter)</p>
 
   <div class="banner">
-    <strong>What's new</strong>
-    During Parent-Teacher Conference week (Nov 16&ndash;20), the newsletter notes dismissal will be 12:45&nbsp;PM every day, not just Wednesdays &mdash; worth confirming and planning pickup around. Also: the class had its first math test this week (Tue/Wed); no homework was assigned those two nights.
+    <h2>New this week</h2>
+    <ul>
+      <li><strong class="tag">New</strong>Science Lab (PTA-sponsored) added for <strong>Oct 27</strong> &mdash; parent volunteers needed, sign-up link now posted.</li>
+      <li><strong class="tag">Confirmed</strong>Parent-Teacher Conference week (Nov 16&ndash;20) dismissal is <strong>12:45 PM every day</strong> that week, not just Wednesdays.</li>
+      <li>Wish List is fully funded &mdash; Mrs. Ramos is taking it down; no action needed there anymore.</li>
+    </ul>
   </div>
 
   <section>
-    <h2>Key dates</h2>
-    <ul>
-      <li>Lunch with your Loves &mdash; Sept 30, 12:15 PM</li>
-      <li>No School &mdash; Oct 12</li>
-      <li>Picture Day &mdash; Oct 15</li>
-      <li>Parent-Teacher Conferences &mdash; Nov 16&ndash;20 (dismissal 12:45 PM each day that week)</li>
-    </ul>
-    <p class="note">Earlier dates that have already passed (first day of school, Back to School Night, Running Club start) are left off this list.</p>
-  </section>
-
-  <section>
-    <h2>Action items</h2>
-    <ul>
-      <li>Sign up for a Parent-Teacher Conference slot (Nov 16&ndash;20) via the sign-up link in the newsletter.</li>
-      <li>Optional: browse the Wish List for classroom supplies.</li>
-      <li>Optional: sign up to volunteer &mdash; field trip volunteers need a fingerprinting clearance on file with the office (forms must be updated yearly).</li>
+    <h2 class="section-title">Key dates</h2>
+    <ul class="date-list">
+      <li><span class="what">Lunch with Loves</span><span class="when">Sep 30, 12:15 PM</span></li>
+      <li><span class="what">No School</span><span class="when">Oct 12</span></li>
+      <li><span class="what">Picture Day</span><span class="when">Oct 15</span></li>
+      <li><span class="what">Science Lab (volunteers needed)</span><span class="when">Oct 27</span></li>
+      <li><span class="what">No School &ndash; Veterans Day</span><span class="when">Nov 11</span></li>
+      <li><span class="what">WildCat Jog-a-thon</span><span class="when">Nov 13</span></li>
+      <li><span class="what">Parent-Teacher Conferences (12:45 PM dismissal daily)</span><span class="when">Nov 16&ndash;20</span></li>
+      <li><span class="what">No School &ndash; Thanksgiving week</span><span class="when">Nov 23&ndash;27</span></li>
     </ul>
   </section>
 
-  <section>
-    <h2>Daily logistics</h2>
+  <section class="action">
+    <h2 class="section-title">Action items for parents</h2>
     <ul>
-      <li>Dismissal: 3:25 PM Mon/Tue/Thu/Fri; 12:45 PM Wednesdays (modified day)</li>
-      <li>Drop-off &amp; pick-up: Green Gate on Stadium Street</li>
-      <li>P.E./VAPA alternate on a Week A / Week B schedule &mdash; check the homework folder for the current week's day/time so kids wear the right shoes and bring a water bottle</li>
-      <li>Home/school folder: empty it every evening and return it to school daily (Dibels results come home in this folder)</li>
-      <li>Homework: read 20+ minutes nightly; review math homework nightly (doesn't need to be returned to school)</li>
+      <li>Sign up to volunteer for the Science Lab, Oct 27 (link in newsletter) &mdash; new this week.</li>
+      <li>Sign up for a Parent-Teacher Conference slot, Nov 16&ndash;20 (link in newsletter), if you haven't yet.</li>
+      <li>Optional: general classroom volunteer sign-up (field trip volunteers need fingerprinting clearance on file).</li>
     </ul>
   </section>
 
   <section>
-    <h2>Supply &amp; policy reminders</h2>
+    <h2 class="section-title">Daily logistics</h2>
     <ul>
-      <li>Peanut allergy in the classroom &mdash; no peanuts or peanut butter in snacks or lunches; consider non-food birthday treats (read-aloud, bubbles, stickers)</li>
-      <li>Headphones must be labeled and kept in a labeled ziplock bag; no wireless earbuds/headphones (send the wired plug if the headphones are wireless)</li>
-      <li>Label all belongings with your child's name and "Room 54"</li>
+      <li>This week (Week B): Library Tuesday 2:30 (return library books), VAPA Thursday 11:30, P.E. Friday 12:55.</li>
+      <li>Dismissal: 3:25 PM Mon/Tue/Thu/Fri; 12:45 PM Wednesdays (modified day).</li>
+      <li>Drop-off/pick-up: Green Gate on Stadium Street.</li>
+      <li>Home/school folder: empty every evening, return daily.</li>
+      <li>Nightly reading 20+ minutes; math homework reviewed nightly (not returned to school).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="section-title">Supply &amp; volunteer reminders</h2>
+    <ul>
+      <li>Science Lab (Oct 27) needs parent volunteers &mdash; sign up via the newsletter link.</li>
+      <li>No peanuts or peanut butter in snacks/lunches (peanut allergy in the classroom).</li>
+      <li>Headphones must be labeled, in a ziplock bag, and wired (no wireless earbuds; send the plug if wireless).</li>
+      <li>Label all belongings with child's name and "Room 54."</li>
+      <li>Field trip volunteers need fingerprinting clearance / current yearly forms on file.</li>
     </ul>
   </section>
 </div>
